@@ -1,0 +1,54 @@
+.cart {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px 0 rgb(0, 0, 0, 0.15);
+  height: 315px;
+  padding: 35px;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+.cart__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 45px;
+
+
+}
+
+.cart__tel {
+  font-size: 16px;
+  line-height: 24px;
+  color: #a39c9c;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("../images/content/phone.png");
+  }
+}
+
+.cart__mail {
+  font-size: 13px;
+  line-height: 18px;
+  color: #688480;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url("../images/content/mail.png");
+  }
+}

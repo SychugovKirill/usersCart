@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Frontend test</title>
+</head>
+<body class="page">
+<section class="container">
+  <form class="filter" action="#" method="post">
+    <fieldset class="filter__wrap">
+      <label class="filter__label" for="search">
+        <svg xmlns="http://www.w3.org/2000/svg" >
+          <path d="M 12.8125 3.75 C 7.820312 3.75 3.75 7.820312 3.75 12.8125 C 3.75 17.804688 7.820312 21.875 12.8125 21.875 C 14.972656 21.875 16.957031 21.113281 18.519531 19.84375 L 24.648438 25.976562 C 24.886719 26.21875 25.234375 26.320312 25.5625 26.234375 C 25.890625 26.148438 26.148438 25.890625 26.234375 25.5625 C 26.320312 25.234375 26.21875 24.886719 25.976562 24.648438 L 19.84375 18.519531 C 21.113281 16.957031 21.875 14.972656 21.875 12.8125 C 21.875 7.820312 17.804688 3.75 12.8125 3.75 Z M 12.8125 5.625 C 16.792969 5.625 20 8.832031 20 12.8125 C 20 14.75 19.234375 16.503906 17.996094 17.792969 C 17.917969 17.851562 17.851562 17.917969 17.792969 17.996094 C 16.503906 19.234375 14.75 20 12.8125 20 C 8.832031 20 5.625 16.792969 5.625 12.8125 C 5.625 8.832031 8.832031 5.625 12.8125 5.625 Z M 12.8125 5.625" fill="#3498db"/>
+        </svg>
+      </label>
+      <input class="filter__input" id="search" type="search" >
+    </fieldset>
+  </form>
+  <div class="root" id="root"></div>
+</section>
+<div class="modal">
+  <div class="modal__box">
+    <div class="modal__wrap">
+      <p class="modal__name" id="modalName">name</p>
+      <ul class="modal__list">
+        <li class="modal__item " >
+          <div class="modal__desc">Телефон:</div>
+          <div class="modal__text" id="modalTel">tel</div>
+        </li>
+        <li class="modal__item " >
+          <div class="modal__desc">Почта:</div>
+          <div class="modal__text" id="modalEmail">email</div>
+        </li>
+        <li class="modal__item " >
+          <div class="modal__desc">Дата приема:</div>
+          <div class="modal__text" id="modalDate">date</div>
+        </li>
+        <li class="modal__item" >
+          <div class="modal__desc">Должность:</div>
+          <div class="modal__text" id="modalPost">post</div>
+        </li>
+        <li class="modal__item" >
+          <div class="modal__desc">Подразделение:</div>
+          <div class="modal__text" id="modalDivision">division</div>
+        </li>
+        <li class="modal__item modal__item--bottom" >
+          <div class="modal__desc">Дополнительная информация:</div>
+          <div class="modal__text modal__text--bottom" id="textBottom"><span>Разработчики используют текст lorem ipsum в качестве заполнителя макета страницы. Так как дополнительной информации в JSON нет, а адрес ни где не используется, закинул его сюда: </span></div>
+        </li>
+      </ul>
+    </div>
+    <button class="modal__close"></button>
+  </div>
+</div>
+</body>
+</html>

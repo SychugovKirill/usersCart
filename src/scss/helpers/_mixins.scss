@@ -1,0 +1,32 @@
+//Сброс стилей для списков
+@mixin list-reset {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Контейнер 1200 px
+@mixin page-wrapper {
+  padding-right: calc(50% - 615px);
+  padding-left: calc(50% - 615px);
+}
+
+
+// 100 высота экрана с вычетом адресной строки.
+// https://github.com/Hiswe/vh-check
+@mixin vh-check {
+  height: calc(100vh - var(--vh-offset, 0));
+}
+
+@mixin includeFont ($font-weight, $font-family, $font-name) {
+  font-weight: $font-weight;
+  font-family: "#{$font-family}";
+  src: local($font-family), url("../fonts/#{$font-name}.woff2") format("woff2"), url("../fonts/#{$font-name}.woff") format("woff");
+  font-display: swap;
+}
+
+@mixin pseudo() {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
