@@ -13,7 +13,6 @@ const renderModal = (arr) => {
     const currentUser = arr.find((item) => {
       return item.name === name;
     });
-    console.log(currentUser);
 
     modal.addEventListener(`click`, (event) => {
       const targetWrap = event.target.closest(`.modal__wrap`);

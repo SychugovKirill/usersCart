@@ -26,6 +26,11 @@
   left: 50%;
   top: 18%;
   transform: translateX(-50%);
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .modal__wrap {
@@ -34,6 +39,7 @@
   background-color: #ffffff;
   border-radius: 20px;
   padding: 30px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 20px 20px 0px rgb(0, 0, 0, 0.15);
@@ -96,6 +102,10 @@
 .modal__desc {
   min-width: 230px;
   font-weight: 700;
+
+  @media (max-width: 1023px) {
+    min-width: 160px;
+  }
 }
 
 .modal__name {
