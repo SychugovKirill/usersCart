@@ -12,11 +12,23 @@
   bottom: 0;
   transition: opacity 0.3s;
 
+  .modal__box {
+    margin-left: 8px;
+  }
+
 
   &.active {
-    opacity: 1;
-    pointer-events: auto;
+     opacity: 1;
+     pointer-events: auto;
+
+    .modal__box {
+      margin-left: 0;
+    }
   }
+
+  &.active body {
+    position: fixed;
+   }
 }
 
 .modal__box {

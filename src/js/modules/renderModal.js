@@ -1,6 +1,7 @@
 const renderModal = (arr) => {
   const root = document.getElementById(`root`);
   const modal = document.querySelector(`.modal`);
+  const body = document.querySelector(`.page`)
 
   root.addEventListener(`click`, (evt) => {
     const target = evt.target.closest(`.cart`);
@@ -22,9 +23,21 @@ const renderModal = (arr) => {
       }
 
       modal.classList.remove(`active`);
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.paddingRight = '0';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     });
 
     modal.classList.add(`active`);
+    document.body.style.position = 'fixed';
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.paddingRight = '15px';
+    document.body.style.top = `-${window.scrollY}px`;
     const modalName = modal.querySelector(`#modalName`);
     const modalTel = modal.querySelector(`#modalTel`);
     const modalEmail = modal.querySelector(`#modalEmail`);
